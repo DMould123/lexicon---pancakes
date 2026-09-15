@@ -6,38 +6,72 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    max-width: 1280px;
-    margin: 0 auto;
+    margin: 0;
+    background: #A100004D;
 }
 
-img {
+.layout {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-right: 48px;
+    padding-bottom: 64px;
+    padding-left: 48px;
+    background: #FCFCFC;
+}
+
+.hero-image {
     width: 100%;
     height: 500px;
+    min-height: 500px;
     object-fit: cover;
     display: block;
+    border: 1px solid #FCFCFC;
 }
 
 #recept {
     color: #A10000;
-    font-style: bold;
     font-size: 28px;
     font-weight: 700;
     margin-top: 30px;
 }
 
-#para1 {
-margin-top: 10px;
-opacity: 1;
-padding: 16px;
-gap: 10px;
-background: #EBEBEB;
+.para1 {
+    margin-top: 10px;
+    width: 100%;
+    height: 54px;
+    padding: 16px;
+    background: #EBEBEB;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
 }
 
 h1 {
     font-size: 24px;
-    font-style: bold;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 16px;
+    line-height: 100%;
 }
 
+li,
+ul {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.pancake-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.pancake-images img {
+    width: 100%;
+    height: 467px;
+    object-fit: cover;
+}
