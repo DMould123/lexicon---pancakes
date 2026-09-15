@@ -1,4 +1,6 @@
-* {
+/* Base Styles */
+
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +11,8 @@ body {
     margin: 0;
     background: #A100004D;
 }
+
+/* Main Layout */
 
 .layout {
     width: 100%;
@@ -21,6 +25,8 @@ body {
     background: #FCFCFC;
 }
 
+/* Hero Image */
+
 .hero-image {
     width: 100%;
     height: 500px;
@@ -29,6 +35,8 @@ body {
     display: block;
     border: 1px solid #FCFCFC;
 }
+
+  /* Main Recipe Section */
 
 #recept {
     color: #A10000;
@@ -57,10 +65,22 @@ h1 {
     line-height: 100%;
 }
 
-li,
-ul {
+p {
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+margin-bottom: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+ ul, ol {
+    padding-left: 20px;
     font-weight: 400;
     font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
 }
 
 .pancake-images {
@@ -68,10 +88,98 @@ ul {
     grid-template-columns: 1fr 1fr;
     column-gap: 24px;
     row-gap: 24px;
+    padding-bottom: 64px;
 }
 
 .pancake-images img {
     width: 100%;
     height: 467px;
     object-fit: cover;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 600px) {
+
+    body {
+        background: #A100004D;
+    }
+
+    .layout {
+        width: 440px;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 16px 64px;
+
+        background: linear-gradient(
+            to bottom,
+            #FCFCFC 0,
+            #FCFCFC calc(100% - 64px),
+            #A100004D calc(100% - 64px),
+            #A100004D 100%
+        );
+    }
+
+    .hero-image {
+        width: 440px;
+        height: 500px;
+        min-height: 500px;
+        margin-left: -16px;
+        margin-right: -16px;
+        display: block;
+        object-fit: cover;
+        border: 1px solid #FCFCFC;
+    }
+
+  #recept {
+    width: 408px;
+    color: #A10000;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+
+    .para1 {
+        width: 408px;
+        height: 76px;
+        padding: 16px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        width: 408px;
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+
+ul,
+ol {
+    width: 408px;
+    padding-left: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+    .pancake-images {
+        width: 408px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .pancake-images img {
+        width: 408px;
+        height: auto;
+        aspect-ratio: 580 / 467;
+        object-fit: cover;
+    }
+
 }
