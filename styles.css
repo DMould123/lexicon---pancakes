@@ -36,9 +36,9 @@ body {
     border: 1px solid #FCFCFC;
 }
 
-  /* Main Recipe Section */
+/* Main Recipe Section */
 
-#recept {
+h1 {
     color: #A10000;
     font-size: 28px;
     font-weight: 700;
@@ -57,7 +57,7 @@ body {
     letter-spacing: 0;
 }
 
-h1 {
+h2 {
     font-size: 24px;
     font-weight: 700;
     margin-top: 20px;
@@ -66,18 +66,18 @@ h1 {
 }
 
 p {
-font-weight: 400;
-font-style: normal;
-font-size: 16px;
-margin-bottom: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
 }
 
-  /* Ingredient and Instruction Lists */
+/* Ingredient and Instruction Lists */
 
- ul, ol {
+ul,
+ol {
     padding-left: 20px;
     font-weight: 400;
     font-size: 16px;
@@ -85,7 +85,7 @@ letter-spacing: 0%;
     letter-spacing: 0;
 }
 
-  /* Panckae Grid Images */
+/* Pancake Grid Images */
 
 .pancake-images {
     display: grid;
@@ -135,17 +135,14 @@ letter-spacing: 0%;
         border: 1px solid #FCFCFC;
     }
 
-  #recept {
-    width: 408px;
-    color: #A10000;
-    font-size: 28px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 100%;
-    letter-spacing: 0;
-    margin-top: 48px;
-    margin-bottom: 0;
-}
+    h1 {
+        width: 408px;
+        font-size: 28px;
+        color: #A10000;
+        font-weight: 700;
+        margin-top: 48px;
+        margin-bottom: 0;
+    }
 
     .para1 {
         width: 408px;
@@ -154,22 +151,21 @@ letter-spacing: 0%;
         margin-top: 10px;
     }
 
-    h1 {
+    h2 {
         width: 408px;
         margin-top: 20px;
         margin-bottom: 16px;
     }
 
-ul,
-ol {
-    width: 408px;
-    padding-left: 20px;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0;
-}
+    ul,
+    ol {
+        width: 408px;
+        padding-left: 20px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
 
     .pancake-images {
         width: 408px;
@@ -184,5 +180,4 @@ ol {
         aspect-ratio: 580 / 467;
         object-fit: cover;
     }
-
 }
